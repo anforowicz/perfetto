@@ -28,7 +28,7 @@ namespace tables {
 // NOTE: this table is not sorted by timestamp. This is why we omit the
 // sorted flag on the ts column.
 //
-// @param ts timestamp of log entry.
+// @param ts timestamp of log entry (in nanoseconds).
 // @param utid thread writing the log entry {@joinable thread.utid}.
 // @param prio priority of the log. 3=DEBUG, 4=INFO, 5=WARN, 6=ERROR.
 // @param tag tag of the log entry.
